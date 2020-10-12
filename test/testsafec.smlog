@@ -1,0 +1,38 @@
+[0] A regression test command failed:
+   make arcombine
+[1] A regression test command failed:
+   make baddef
+[2] A regression test command failed:
+   make comb
+[3] A regression test command failed:
+   make combine1
+[4] A regression test command failed:
+   make combine10
+[5] A regression test command failed:
+   make combine11
+[6] A regression test command failed:
+   make combine12
+[7] A regression test command failed:
+   make combine13
+[8] A regression test command failed:
+   make combine14
+[9] A regression test command failed:
+   make combine15
+[10] A regression test command failed:
+   make combine16
+[11] A regression test command failed:
+   make combine17
+[12] A regression test command failed:
+   make combine18
+[13] A regression test command failed:
+   make combine2
+[14] A regression test command failed:
+   make combine20
+[15] A regression test command failed:
+   make combine21
+[17] A regression test command failed:
+   make combine3
+[18] A regression test command failed:
+   make combine5
+[19] A regression test command failed:
+   make combine6

@@ -1,0 +1,6 @@
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine8_2.c combine8_1.c \
+            -ocombine8.exe
+Makefile:279: recipe for target 'combine8' failed

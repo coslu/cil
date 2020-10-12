@@ -1,0 +1,349 @@
+Testsuite ran on Wed Jun 10 15:22:20 2020 on localhost
+
+===================================
+Starting test 1/408 on Wed Jun 10 15:22:20 2020: arcombine
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [arcombine] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -c array1.c array2.c
+Makefile:286: recipe for target 'arcombine' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 2/408 on Wed Jun 10 15:22:20 2020: baddef
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+gcc: error: baddef1.o: No such file or directory
+gcc: error: baddef2.o: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+make[1]: *** [baddef] Error 1
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small2; gcc baddef1.c baddef2.c -o baddef.exe \
+           && ./baddef.exe
+size1: 8
+size2: 12
+(correct output is 8, then 12)
+rm -f ./small2/baddef.exe
+cd ./small2; \
+  /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats  baddef1.c -c -o baddef1.o; \
+  /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats  baddef2.c -c -o baddef2.o; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats  baddef1.o baddef2.o -obaddef.exe
+Makefile:395: recipe for target 'baddef' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 3/408 on Wed Jun 10 15:22:20 2020: comb
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+gcc: error: comb1.o: No such file or directory
+gcc: error: comb2.o: No such file or directory
+gcc: error: comb3.o: No such file or directory
+make[1]: *** [comb] Error 1
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+rm -f ./small2/comb.exe
+cd ./small2; \
+  /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats  comb1.c -c -o comb1.o; \
+  /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats  comb2.c -c -o comb2.o; \
+  /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats  comb3.c -c -o comb3.o; \
+  /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats  comb4.c -c -o comb4.o; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats  comb1.o comb2.o comb3.o comb4.o -ocomb.exe
+Makefile:353: recipe for target 'comb' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 4/408 on Wed Jun 10 15:22:20 2020: combine1
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine1] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine1_1.c combine1_2.c combine1_3.c \
+            -ocombine1.exe
+Makefile:279: recipe for target 'combine1' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 5/408 on Wed Jun 10 15:22:20 2020: combine10
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine10] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine10_2.c combine10_1.c combine10_3.c \
+            -ocombine10.exe
+Makefile:279: recipe for target 'combine10' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 6/408 on Wed Jun 10 15:22:21 2020: combine11
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine11] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine11_2.c combine11_1.c \
+            -ocombine11.exe
+Makefile:279: recipe for target 'combine11' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 7/408 on Wed Jun 10 15:22:21 2020: combine12
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine12] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine12_1.c combine12_2.c \
+            -ocombine12.exe
+Makefile:279: recipe for target 'combine12' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 8/408 on Wed Jun 10 15:22:21 2020: combine13
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine13] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine13_2.c combine13_1.c \
+            -ocombine13.exe
+Makefile:279: recipe for target 'combine13' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 9/408 on Wed Jun 10 15:22:21 2020: combine14
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine14] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine14_2.c combine14_1.c \
+            -ocombine14.exe
+Makefile:279: recipe for target 'combine14' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 10/408 on Wed Jun 10 15:22:21 2020: combine15
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine15] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine15_2.c combine15_1.c \
+            -ocombine15.exe
+Makefile:279: recipe for target 'combine15' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 11/408 on Wed Jun 10 15:22:21 2020: combine16
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine16] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine16_2.c combine16_1.c \
+            -ocombine16.exe
+Makefile:279: recipe for target 'combine16' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 12/408 on Wed Jun 10 15:22:21 2020: combine17
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine17] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine17_1.c combine17_2.c \
+            -ocombine17.exe
+Makefile:279: recipe for target 'combine17' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 13/408 on Wed Jun 10 15:22:21 2020: combine18
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine18] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine18_1.c combine18_2.c \
+            -ocombine18.exe
+Makefile:279: recipe for target 'combine18' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 14/408 on Wed Jun 10 15:22:21 2020: combine2
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine2] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine2_3.c combine2_1.c combine2_2.c \
+            -ocombine2.exe
+Makefile:279: recipe for target 'combine2' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 15/408 on Wed Jun 10 15:22:21 2020: combine20
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine20] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine20_1.c combine20_2.c \
+            -ocombine20.exe
+Makefile:279: recipe for target 'combine20' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 16/408 on Wed Jun 10 15:22:21 2020: combine21
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine21] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine21_1.c combine21_2.c \
+            -ocombine21.exe
+Makefile:279: recipe for target 'combine21' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 17/408 on Wed Jun 10 15:22:21 2020: combine22
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine22] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine22_2.c combine22_1.c \
+            -ocombine22.exe
+Makefile:279: recipe for target 'combine22' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 18/408 on Wed Jun 10 15:22:21 2020: combine3
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine3] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine3_3.c combine3_2.c combine3_1.c \
+            -ocombine3.exe
+Makefile:279: recipe for target 'combine3' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 19/408 on Wed Jun 10 15:22:21 2020: combine5
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine5] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine5_3.c combine5_1.c combine5_2.c \
+            -ocombine5.exe
+Makefile:279: recipe for target 'combine5' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 20/408 on Wed Jun 10 15:22:21 2020: combine6
+Error: findlib: no such package goblint-cil.
+
+Fatal error: exception Errormsg.Error
+make[1]: *** [combine6] Error 2
+
+    === STDOUT ===
+make[1]: Entering directory '/home/baro/Documents/Goblint/cil/test'
+cd ./small1; \
+          /home/baro/Documents/Goblint/cil/test/../bin/cilly --mode=GNUCC --decil --save-temps  --strictcheck --stats -D_GNUCC -Wall -g -ggdb -D_DEBUG -std=gnu90 \
+                    combine6_1.c combine6_3.c combine6_2.c \
+            -ocombine6.exe
+Makefile:279: recipe for target 'combine6' failed
+make[1]: Leaving directory '/home/baro/Documents/Goblint/cil/test'
+
+===================================
+Starting test 21/408 on Wed Jun 10 15:22:21 2020: combine8

@@ -1,0 +1,5490 @@
+# 1 "c99-complex.c"
+# 1 "/home/baro/Documents/Goblint/cil/test/small1//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 1 "<command-line>" 2
+# 1 "c99-complex.c"
+# 1 "/usr/include/stdio.h" 1 3 4
+# 27 "/usr/include/stdio.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 33 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 3 4
+# 1 "/usr/include/features.h" 1 3 4
+# 424 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
+# 427 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 428 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
+# 429 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 425 "/usr/include/features.h" 2 3 4
+# 448 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
+# 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
+# 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
+# 449 "/usr/include/features.h" 2 3 4
+# 34 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 2 3 4
+# 28 "/usr/include/stdio.h" 2 3 4
+
+
+
+
+
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h" 1 3 4
+# 216 "/usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h" 3 4
+
+# 216 "/usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h" 3 4
+typedef long unsigned int size_t;
+# 34 "/usr/include/stdio.h" 2 3 4
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned char __u_char;
+typedef unsigned short int __u_short;
+typedef unsigned int __u_int;
+typedef unsigned long int __u_long;
+
+
+typedef signed char __int8_t;
+typedef unsigned char __uint8_t;
+typedef signed short int __int16_t;
+typedef unsigned short int __uint16_t;
+typedef signed int __int32_t;
+typedef unsigned int __uint32_t;
+
+typedef signed long int __int64_t;
+typedef unsigned long int __uint64_t;
+
+
+
+
+
+
+
+typedef long int __quad_t;
+typedef unsigned long int __u_quad_t;
+
+
+
+
+
+
+
+typedef long int __intmax_t;
+typedef unsigned long int __uintmax_t;
+# 130 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
+# 131 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned long int __dev_t;
+typedef unsigned int __uid_t;
+typedef unsigned int __gid_t;
+typedef unsigned long int __ino_t;
+typedef unsigned long int __ino64_t;
+typedef unsigned int __mode_t;
+typedef unsigned long int __nlink_t;
+typedef long int __off_t;
+typedef long int __off64_t;
+typedef int __pid_t;
+typedef struct { int __val[2]; } __fsid_t;
+typedef long int __clock_t;
+typedef unsigned long int __rlim_t;
+typedef unsigned long int __rlim64_t;
+typedef unsigned int __id_t;
+typedef long int __time_t;
+typedef unsigned int __useconds_t;
+typedef long int __suseconds_t;
+
+typedef int __daddr_t;
+typedef int __key_t;
+
+
+typedef int __clockid_t;
+
+
+typedef void * __timer_t;
+
+
+typedef long int __blksize_t;
+
+
+
+
+typedef long int __blkcnt_t;
+typedef long int __blkcnt64_t;
+
+
+typedef unsigned long int __fsblkcnt_t;
+typedef unsigned long int __fsblkcnt64_t;
+
+
+typedef unsigned long int __fsfilcnt_t;
+typedef unsigned long int __fsfilcnt64_t;
+
+
+typedef long int __fsword_t;
+
+typedef long int __ssize_t;
+
+
+typedef long int __syscall_slong_t;
+
+typedef unsigned long int __syscall_ulong_t;
+
+
+
+typedef __off64_t __loff_t;
+typedef char *__caddr_t;
+
+
+typedef long int __intptr_t;
+
+
+typedef unsigned int __socklen_t;
+
+
+
+
+typedef int __sig_atomic_t;
+# 36 "/usr/include/stdio.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__FILE.h" 1 3 4
+
+
+
+struct _IO_FILE;
+typedef struct _IO_FILE __FILE;
+# 37 "/usr/include/stdio.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/FILE.h" 1 3 4
+
+
+
+struct _IO_FILE;
+
+
+typedef struct _IO_FILE FILE;
+# 38 "/usr/include/stdio.h" 2 3 4
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/libio.h" 1 3 4
+# 35 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/_G_config.h" 1 3 4
+# 19 "/usr/include/x86_64-linux-gnu/bits/_G_config.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h" 1 3 4
+# 20 "/usr/include/x86_64-linux-gnu/bits/_G_config.h" 2 3 4
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h" 1 3 4
+# 13 "/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h" 3 4
+typedef struct
+{
+  int __count;
+  union
+  {
+    unsigned int __wch;
+    char __wchb[4];
+  } __value;
+} __mbstate_t;
+# 22 "/usr/include/x86_64-linux-gnu/bits/_G_config.h" 2 3 4
+
+
+
+
+typedef struct
+{
+  __off_t __pos;
+  __mbstate_t __state;
+} _G_fpos_t;
+typedef struct
+{
+  __off64_t __pos;
+  __mbstate_t __state;
+} _G_fpos64_t;
+# 36 "/usr/include/x86_64-linux-gnu/bits/libio.h" 2 3 4
+# 53 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h" 1 3 4
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 54 "/usr/include/x86_64-linux-gnu/bits/libio.h" 2 3 4
+# 149 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
+struct _IO_jump_t; struct _IO_FILE;
+
+
+
+
+typedef void _IO_lock_t;
+
+
+
+
+
+struct _IO_marker {
+  struct _IO_marker *_next;
+  struct _IO_FILE *_sbuf;
+
+
+
+  int _pos;
+# 177 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
+};
+
+
+enum __codecvt_result
+{
+  __codecvt_ok,
+  __codecvt_partial,
+  __codecvt_error,
+  __codecvt_noconv
+};
+# 245 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
+struct _IO_FILE {
+  int _flags;
+
+
+
+
+  char* _IO_read_ptr;
+  char* _IO_read_end;
+  char* _IO_read_base;
+  char* _IO_write_base;
+  char* _IO_write_ptr;
+  char* _IO_write_end;
+  char* _IO_buf_base;
+  char* _IO_buf_end;
+
+  char *_IO_save_base;
+  char *_IO_backup_base;
+  char *_IO_save_end;
+
+  struct _IO_marker *_markers;
+
+  struct _IO_FILE *_chain;
+
+  int _fileno;
+
+
+
+  int _flags2;
+
+  __off_t _old_offset;
+
+
+
+  unsigned short _cur_column;
+  signed char _vtable_offset;
+  char _shortbuf[1];
+
+
+
+  _IO_lock_t *_lock;
+# 293 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
+  __off64_t _offset;
+
+
+
+
+
+
+
+  void *__pad1;
+  void *__pad2;
+  void *__pad3;
+  void *__pad4;
+
+  size_t __pad5;
+  int _mode;
+
+  char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
+
+};
+
+
+typedef struct _IO_FILE _IO_FILE;
+
+
+struct _IO_FILE_plus;
+
+extern struct _IO_FILE_plus _IO_2_1_stdin_;
+extern struct _IO_FILE_plus _IO_2_1_stdout_;
+extern struct _IO_FILE_plus _IO_2_1_stderr_;
+# 337 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
+typedef __ssize_t __io_read_fn (void *__cookie, char *__buf, size_t __nbytes);
+
+
+
+
+
+
+
+typedef __ssize_t __io_write_fn (void *__cookie, const char *__buf,
+     size_t __n);
+
+
+
+
+
+
+
+typedef int __io_seek_fn (void *__cookie, __off64_t *__pos, int __w);
+
+
+typedef int __io_close_fn (void *__cookie);
+# 389 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
+extern int __underflow (_IO_FILE *);
+extern int __uflow (_IO_FILE *);
+extern int __overflow (_IO_FILE *, int);
+# 433 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
+extern int _IO_getc (_IO_FILE *__fp);
+extern int _IO_putc (int __c, _IO_FILE *__fp);
+extern int _IO_feof (_IO_FILE *__fp) __attribute__ ((__nothrow__ , __leaf__));
+extern int _IO_ferror (_IO_FILE *__fp) __attribute__ ((__nothrow__ , __leaf__));
+
+extern int _IO_peekc_locked (_IO_FILE *__fp);
+
+
+
+
+
+extern void _IO_flockfile (_IO_FILE *) __attribute__ ((__nothrow__ , __leaf__));
+extern void _IO_funlockfile (_IO_FILE *) __attribute__ ((__nothrow__ , __leaf__));
+extern int _IO_ftrylockfile (_IO_FILE *) __attribute__ ((__nothrow__ , __leaf__));
+# 462 "/usr/include/x86_64-linux-gnu/bits/libio.h" 3 4
+extern int _IO_vfscanf (_IO_FILE * __restrict, const char * __restrict,
+   __gnuc_va_list, int *__restrict);
+extern int _IO_vfprintf (_IO_FILE *__restrict, const char *__restrict,
+    __gnuc_va_list);
+extern __ssize_t _IO_padn (_IO_FILE *, int, __ssize_t);
+extern size_t _IO_sgetn (_IO_FILE *, void *, size_t);
+
+extern __off64_t _IO_seekoff (_IO_FILE *, __off64_t, int, int);
+extern __off64_t _IO_seekpos (_IO_FILE *, __off64_t, int);
+
+extern void _IO_free_backup_area (_IO_FILE *) __attribute__ ((__nothrow__ , __leaf__));
+# 42 "/usr/include/stdio.h" 2 3 4
+# 78 "/usr/include/stdio.h" 3 4
+typedef _G_fpos_t fpos_t;
+# 131 "/usr/include/stdio.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
+# 132 "/usr/include/stdio.h" 2 3 4
+
+
+
+extern struct _IO_FILE *stdin;
+extern struct _IO_FILE *stdout;
+extern struct _IO_FILE *stderr;
+
+
+
+
+
+
+extern int remove (const char *__filename) __attribute__ ((__nothrow__ , __leaf__));
+
+extern int rename (const char *__old, const char *__new) __attribute__ ((__nothrow__ , __leaf__));
+# 159 "/usr/include/stdio.h" 3 4
+extern FILE *tmpfile (void) ;
+# 173 "/usr/include/stdio.h" 3 4
+extern char *tmpnam (char *__s) __attribute__ ((__nothrow__ , __leaf__)) ;
+# 199 "/usr/include/stdio.h" 3 4
+extern int fclose (FILE *__stream);
+
+
+
+
+extern int fflush (FILE *__stream);
+# 232 "/usr/include/stdio.h" 3 4
+extern FILE *fopen (const char *__restrict __filename,
+      const char *__restrict __modes) ;
+
+
+
+
+extern FILE *freopen (const char *__restrict __filename,
+        const char *__restrict __modes,
+        FILE *__restrict __stream) ;
+# 290 "/usr/include/stdio.h" 3 4
+extern void setbuf (FILE *__restrict __stream, char *__restrict __buf) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern int setvbuf (FILE *__restrict __stream, char *__restrict __buf,
+      int __modes, size_t __n) __attribute__ ((__nothrow__ , __leaf__));
+# 312 "/usr/include/stdio.h" 3 4
+extern int fprintf (FILE *__restrict __stream,
+      const char *__restrict __format, ...);
+
+
+
+
+extern int printf (const char *__restrict __format, ...);
+
+extern int sprintf (char *__restrict __s,
+      const char *__restrict __format, ...) __attribute__ ((__nothrow__));
+
+
+
+
+
+extern int vfprintf (FILE *__restrict __s, const char *__restrict __format,
+       __gnuc_va_list __arg);
+
+
+
+
+extern int vprintf (const char *__restrict __format, __gnuc_va_list __arg);
+
+extern int vsprintf (char *__restrict __s, const char *__restrict __format,
+       __gnuc_va_list __arg) __attribute__ ((__nothrow__));
+
+
+
+extern int snprintf (char *__restrict __s, size_t __maxlen,
+       const char *__restrict __format, ...)
+     __attribute__ ((__nothrow__)) __attribute__ ((__format__ (__printf__, 3, 4)));
+
+extern int vsnprintf (char *__restrict __s, size_t __maxlen,
+        const char *__restrict __format, __gnuc_va_list __arg)
+     __attribute__ ((__nothrow__)) __attribute__ ((__format__ (__printf__, 3, 0)));
+# 377 "/usr/include/stdio.h" 3 4
+extern int fscanf (FILE *__restrict __stream,
+     const char *__restrict __format, ...) ;
+
+
+
+
+extern int scanf (const char *__restrict __format, ...) ;
+
+extern int sscanf (const char *__restrict __s,
+     const char *__restrict __format, ...) __attribute__ ((__nothrow__ , __leaf__));
+# 395 "/usr/include/stdio.h" 3 4
+extern int fscanf (FILE *__restrict __stream, const char *__restrict __format, ...) __asm__ ("" "__isoc99_fscanf")
+
+                               ;
+extern int scanf (const char *__restrict __format, ...) __asm__ ("" "__isoc99_scanf")
+                              ;
+extern int sscanf (const char *__restrict __s, const char *__restrict __format, ...) __asm__ ("" "__isoc99_sscanf") __attribute__ ((__nothrow__ , __leaf__))
+
+                      ;
+# 420 "/usr/include/stdio.h" 3 4
+extern int vfscanf (FILE *__restrict __s, const char *__restrict __format,
+      __gnuc_va_list __arg)
+     __attribute__ ((__format__ (__scanf__, 2, 0))) ;
+
+
+
+
+
+extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg)
+     __attribute__ ((__format__ (__scanf__, 1, 0))) ;
+
+
+extern int vsscanf (const char *__restrict __s,
+      const char *__restrict __format, __gnuc_va_list __arg)
+     __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__format__ (__scanf__, 2, 0)));
+# 443 "/usr/include/stdio.h" 3 4
+extern int vfscanf (FILE *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vfscanf")
+
+
+
+     __attribute__ ((__format__ (__scanf__, 2, 0))) ;
+extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vscanf")
+
+     __attribute__ ((__format__ (__scanf__, 1, 0))) ;
+extern int vsscanf (const char *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vsscanf") __attribute__ ((__nothrow__ , __leaf__))
+
+
+
+     __attribute__ ((__format__ (__scanf__, 2, 0)));
+# 477 "/usr/include/stdio.h" 3 4
+extern int fgetc (FILE *__stream);
+extern int getc (FILE *__stream);
+
+
+
+
+
+extern int getchar (void);
+# 517 "/usr/include/stdio.h" 3 4
+extern int fputc (int __c, FILE *__stream);
+extern int putc (int __c, FILE *__stream);
+
+
+
+
+
+extern int putchar (int __c);
+# 564 "/usr/include/stdio.h" 3 4
+extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream)
+     ;
+# 577 "/usr/include/stdio.h" 3 4
+extern char *gets (char *__s) __attribute__ ((__deprecated__));
+# 626 "/usr/include/stdio.h" 3 4
+extern int fputs (const char *__restrict __s, FILE *__restrict __stream);
+
+
+
+
+
+extern int puts (const char *__s);
+
+
+
+
+
+
+extern int ungetc (int __c, FILE *__stream);
+
+
+
+
+
+
+extern size_t fread (void *__restrict __ptr, size_t __size,
+       size_t __n, FILE *__restrict __stream) ;
+
+
+
+
+extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+        size_t __n, FILE *__restrict __s);
+# 684 "/usr/include/stdio.h" 3 4
+extern int fseek (FILE *__stream, long int __off, int __whence);
+
+
+
+
+extern long int ftell (FILE *__stream) ;
+
+
+
+
+extern void rewind (FILE *__stream);
+# 731 "/usr/include/stdio.h" 3 4
+extern int fgetpos (FILE *__restrict __stream, fpos_t *__restrict __pos);
+
+
+
+
+extern int fsetpos (FILE *__stream, const fpos_t *__pos);
+# 757 "/usr/include/stdio.h" 3 4
+extern void clearerr (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__));
+
+extern int feof (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)) ;
+
+extern int ferror (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)) ;
+# 775 "/usr/include/stdio.h" 3 4
+extern void perror (const char *__s);
+
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/sys_errlist.h" 1 3 4
+# 782 "/usr/include/stdio.h" 2 3 4
+# 868 "/usr/include/stdio.h" 3 4
+
+# 2 "c99-complex.c" 2
+# 1 "/usr/include/complex.h" 1 3 4
+# 26 "/usr/include/complex.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 27 "/usr/include/complex.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathdef.h" 1 3 4
+# 30 "/usr/include/complex.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 1 3 4
+# 120 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
+# 25 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 2 3 4
+# 121 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 2 3 4
+# 33 "/usr/include/complex.h" 2 3 4
+
+
+# 106 "/usr/include/complex.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 1 3 4
+# 55 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 3 4
+extern double _Complex cacos (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __cacos (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double _Complex casin (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __casin (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double _Complex catan (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __catan (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double _Complex ccos (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __ccos (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double _Complex csin (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __csin (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double _Complex ctan (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __ctan (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+extern double _Complex cacosh (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __cacosh (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double _Complex casinh (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __casinh (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double _Complex catanh (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __catanh (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double _Complex ccosh (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __ccosh (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double _Complex csinh (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __csinh (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double _Complex ctanh (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __ctanh (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+extern double _Complex cexp (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __cexp (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double _Complex clog (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __clog (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+# 103 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 3 4
+extern double _Complex cpow (double _Complex __x, double _Complex __y) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __cpow (double _Complex __x, double _Complex __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double _Complex csqrt (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __csqrt (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+extern double cabs (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double __cabs (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double carg (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double __carg (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double _Complex conj (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __conj (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double _Complex cproj (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double _Complex __cproj (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+extern double cimag (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double __cimag (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double creal (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern double __creal (double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+# 107 "/usr/include/complex.h" 2 3 4
+
+
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 1 3 4
+# 55 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 3 4
+extern float _Complex cacosf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __cacosf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float _Complex casinf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __casinf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float _Complex catanf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __catanf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float _Complex ccosf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __ccosf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float _Complex csinf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __csinf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float _Complex ctanf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __ctanf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+extern float _Complex cacoshf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __cacoshf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float _Complex casinhf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __casinhf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float _Complex catanhf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __catanhf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float _Complex ccoshf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __ccoshf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float _Complex csinhf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __csinhf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float _Complex ctanhf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __ctanhf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+extern float _Complex cexpf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __cexpf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float _Complex clogf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __clogf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+# 103 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 3 4
+extern float _Complex cpowf (float _Complex __x, float _Complex __y) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __cpowf (float _Complex __x, float _Complex __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float _Complex csqrtf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __csqrtf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+extern float cabsf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float __cabsf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float cargf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float __cargf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float _Complex conjf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __conjf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float _Complex cprojf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float _Complex __cprojf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+extern float cimagf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float __cimagf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float crealf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern float __crealf (float _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+# 114 "/usr/include/complex.h" 2 3 4
+# 129 "/usr/include/complex.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 1 3 4
+# 55 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 3 4
+extern long double _Complex cacosl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __cacosl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double _Complex casinl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __casinl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double _Complex catanl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __catanl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double _Complex ccosl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __ccosl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double _Complex csinl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __csinl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double _Complex ctanl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __ctanl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+extern long double _Complex cacoshl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __cacoshl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double _Complex casinhl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __casinhl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double _Complex catanhl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __catanhl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double _Complex ccoshl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __ccoshl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double _Complex csinhl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __csinhl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double _Complex ctanhl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __ctanhl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+extern long double _Complex cexpl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __cexpl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double _Complex clogl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __clogl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+# 103 "/usr/include/x86_64-linux-gnu/bits/cmathcalls.h" 3 4
+extern long double _Complex cpowl (long double _Complex __x, long double _Complex __y) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __cpowl (long double _Complex __x, long double _Complex __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double _Complex csqrtl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __csqrtl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+extern long double cabsl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double __cabsl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double cargl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double __cargl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double _Complex conjl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __conjl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double _Complex cprojl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double _Complex __cprojl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+extern long double cimagl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double __cimagl (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double creall (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double __creall (long double _Complex __z) __attribute__ ((__nothrow__ , __leaf__));
+# 130 "/usr/include/complex.h" 2 3 4
+# 222 "/usr/include/complex.h" 3 4
+
+# 3 "c99-complex.c" 2
+# 1 "/usr/include/tgmath.h" 1 3 4
+# 26 "/usr/include/tgmath.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 27 "/usr/include/tgmath.h" 2 3 4
+
+
+
+# 1 "/usr/include/math.h" 1 3 4
+# 27 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 28 "/usr/include/math.h" 2 3 4
+
+
+
+
+
+
+
+
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/math-vector.h" 1 3 4
+# 25 "/usr/include/x86_64-linux-gnu/bits/math-vector.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h" 1 3 4
+# 26 "/usr/include/x86_64-linux-gnu/bits/math-vector.h" 2 3 4
+# 41 "/usr/include/math.h" 2 3 4
+# 138 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h" 1 3 4
+# 139 "/usr/include/math.h" 2 3 4
+# 149 "/usr/include/math.h" 3 4
+typedef float float_t;
+typedef double double_t;
+# 190 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/fp-logb.h" 1 3 4
+# 191 "/usr/include/math.h" 2 3 4
+# 233 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/fp-fast.h" 1 3 4
+# 234 "/usr/include/math.h" 2 3 4
+# 289 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 1 3 4
+# 21 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
+extern int __fpclassify (double __value) __attribute__ ((__nothrow__ , __leaf__))
+     __attribute__ ((__const__));
+
+
+extern int __signbit (double __value) __attribute__ ((__nothrow__ , __leaf__))
+     __attribute__ ((__const__));
+
+
+
+extern int __isinf (double __value) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern int __finite (double __value) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern int __isnan (double __value) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern int __iseqsig (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern int __issignaling (double __value) __attribute__ ((__nothrow__ , __leaf__))
+     __attribute__ ((__const__));
+# 290 "/usr/include/math.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern double acos (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __acos (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double asin (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __asin (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double atan (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __atan (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double atan2 (double __y, double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __atan2 (double __y, double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+ extern double cos (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __cos (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+ extern double sin (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __sin (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double tan (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __tan (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+extern double cosh (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __cosh (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double sinh (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __sinh (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double tanh (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __tanh (double __x) __attribute__ ((__nothrow__ , __leaf__));
+# 85 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern double acosh (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __acosh (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double asinh (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __asinh (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double atanh (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __atanh (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+ extern double exp (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __exp (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double frexp (double __x, int *__exponent) __attribute__ ((__nothrow__ , __leaf__)); extern double __frexp (double __x, int *__exponent) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double ldexp (double __x, int __exponent) __attribute__ ((__nothrow__ , __leaf__)); extern double __ldexp (double __x, int __exponent) __attribute__ ((__nothrow__ , __leaf__));
+
+
+ extern double log (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __log (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double log10 (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __log10 (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double modf (double __x, double *__iptr) __attribute__ ((__nothrow__ , __leaf__)); extern double __modf (double __x, double *__iptr) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (2)));
+# 119 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern double expm1 (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __expm1 (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double log1p (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __log1p (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double logb (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __logb (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+extern double exp2 (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __exp2 (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double log2 (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __log2 (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+
+ extern double pow (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__)); extern double __pow (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double sqrt (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __sqrt (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern double hypot (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__)); extern double __hypot (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+extern double cbrt (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __cbrt (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+
+extern double ceil (double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern double __ceil (double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern double fabs (double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern double __fabs (double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern double floor (double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern double __floor (double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern double fmod (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__)); extern double __fmod (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__));
+# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern double copysign (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern double __copysign (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+
+
+extern double nan (const char *__tagb) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern double __nan (const char *__tagb) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+# 228 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern double erf (double) __attribute__ ((__nothrow__ , __leaf__)); extern double __erf (double) __attribute__ ((__nothrow__ , __leaf__));
+extern double erfc (double) __attribute__ ((__nothrow__ , __leaf__)); extern double __erfc (double) __attribute__ ((__nothrow__ , __leaf__));
+extern double lgamma (double) __attribute__ ((__nothrow__ , __leaf__)); extern double __lgamma (double) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+extern double tgamma (double) __attribute__ ((__nothrow__ , __leaf__)); extern double __tgamma (double) __attribute__ ((__nothrow__ , __leaf__));
+# 256 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern double rint (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __rint (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double nextafter (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__)); extern double __nextafter (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__));
+
+extern double nexttoward (double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__)); extern double __nexttoward (double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__));
+# 272 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern double remainder (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__)); extern double __remainder (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern double scalbn (double __x, int __n) __attribute__ ((__nothrow__ , __leaf__)); extern double __scalbn (double __x, int __n) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern int ilogb (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern int __ilogb (double __x) __attribute__ ((__nothrow__ , __leaf__));
+# 290 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern double scalbln (double __x, long int __n) __attribute__ ((__nothrow__ , __leaf__)); extern double __scalbln (double __x, long int __n) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern double nearbyint (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern double __nearbyint (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern double round (double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern double __round (double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+
+extern double trunc (double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern double __trunc (double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+
+
+extern double remquo (double __x, double __y, int *__quo) __attribute__ ((__nothrow__ , __leaf__)); extern double __remquo (double __x, double __y, int *__quo) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+
+extern long int lrint (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long int __lrint (double __x) __attribute__ ((__nothrow__ , __leaf__));
+__extension__
+extern long long int llrint (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long long int __llrint (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern long int lround (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long int __lround (double __x) __attribute__ ((__nothrow__ , __leaf__));
+__extension__
+extern long long int llround (double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long long int __llround (double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern double fdim (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__)); extern double __fdim (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern double fmax (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern double __fmax (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern double fmin (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern double __fmin (double __x, double __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern double fma (double __x, double __y, double __z) __attribute__ ((__nothrow__ , __leaf__)); extern double __fma (double __x, double __y, double __z) __attribute__ ((__nothrow__ , __leaf__));
+# 291 "/usr/include/math.h" 2 3 4
+# 306 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 1 3 4
+# 21 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
+extern int __fpclassifyf (float __value) __attribute__ ((__nothrow__ , __leaf__))
+     __attribute__ ((__const__));
+
+
+extern int __signbitf (float __value) __attribute__ ((__nothrow__ , __leaf__))
+     __attribute__ ((__const__));
+
+
+
+extern int __isinff (float __value) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern int __finitef (float __value) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern int __isnanf (float __value) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern int __iseqsigf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern int __issignalingf (float __value) __attribute__ ((__nothrow__ , __leaf__))
+     __attribute__ ((__const__));
+# 307 "/usr/include/math.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern float acosf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __acosf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float asinf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __asinf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float atanf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __atanf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float atan2f (float __y, float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __atan2f (float __y, float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+ extern float cosf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __cosf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+ extern float sinf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __sinf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float tanf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __tanf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+extern float coshf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __coshf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float sinhf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __sinhf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float tanhf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __tanhf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+# 85 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern float acoshf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __acoshf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float asinhf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __asinhf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float atanhf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __atanhf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+ extern float expf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __expf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float frexpf (float __x, int *__exponent) __attribute__ ((__nothrow__ , __leaf__)); extern float __frexpf (float __x, int *__exponent) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float ldexpf (float __x, int __exponent) __attribute__ ((__nothrow__ , __leaf__)); extern float __ldexpf (float __x, int __exponent) __attribute__ ((__nothrow__ , __leaf__));
+
+
+ extern float logf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __logf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float log10f (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __log10f (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float modff (float __x, float *__iptr) __attribute__ ((__nothrow__ , __leaf__)); extern float __modff (float __x, float *__iptr) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (2)));
+# 119 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern float expm1f (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __expm1f (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float log1pf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __log1pf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float logbf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __logbf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+extern float exp2f (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __exp2f (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float log2f (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __log2f (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+
+ extern float powf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__)); extern float __powf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float sqrtf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __sqrtf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern float hypotf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__)); extern float __hypotf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+extern float cbrtf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __cbrtf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+
+extern float ceilf (float __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern float __ceilf (float __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern float fabsf (float __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern float __fabsf (float __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern float floorf (float __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern float __floorf (float __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern float fmodf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__)); extern float __fmodf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__));
+# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern float copysignf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern float __copysignf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+
+
+extern float nanf (const char *__tagb) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern float __nanf (const char *__tagb) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+# 228 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern float erff (float) __attribute__ ((__nothrow__ , __leaf__)); extern float __erff (float) __attribute__ ((__nothrow__ , __leaf__));
+extern float erfcf (float) __attribute__ ((__nothrow__ , __leaf__)); extern float __erfcf (float) __attribute__ ((__nothrow__ , __leaf__));
+extern float lgammaf (float) __attribute__ ((__nothrow__ , __leaf__)); extern float __lgammaf (float) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+extern float tgammaf (float) __attribute__ ((__nothrow__ , __leaf__)); extern float __tgammaf (float) __attribute__ ((__nothrow__ , __leaf__));
+# 256 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern float rintf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __rintf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float nextafterf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__)); extern float __nextafterf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__));
+
+extern float nexttowardf (float __x, long double __y) __attribute__ ((__nothrow__ , __leaf__)); extern float __nexttowardf (float __x, long double __y) __attribute__ ((__nothrow__ , __leaf__));
+# 272 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern float remainderf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__)); extern float __remainderf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern float scalbnf (float __x, int __n) __attribute__ ((__nothrow__ , __leaf__)); extern float __scalbnf (float __x, int __n) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern int ilogbf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern int __ilogbf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+# 290 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern float scalblnf (float __x, long int __n) __attribute__ ((__nothrow__ , __leaf__)); extern float __scalblnf (float __x, long int __n) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern float nearbyintf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern float __nearbyintf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern float roundf (float __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern float __roundf (float __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+
+extern float truncf (float __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern float __truncf (float __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+
+
+extern float remquof (float __x, float __y, int *__quo) __attribute__ ((__nothrow__ , __leaf__)); extern float __remquof (float __x, float __y, int *__quo) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+
+extern long int lrintf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern long int __lrintf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+__extension__
+extern long long int llrintf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern long long int __llrintf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern long int lroundf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern long int __lroundf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+__extension__
+extern long long int llroundf (float __x) __attribute__ ((__nothrow__ , __leaf__)); extern long long int __llroundf (float __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern float fdimf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__)); extern float __fdimf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern float fmaxf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern float __fmaxf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern float fminf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern float __fminf (float __x, float __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern float fmaf (float __x, float __y, float __z) __attribute__ ((__nothrow__ , __leaf__)); extern float __fmaf (float __x, float __y, float __z) __attribute__ ((__nothrow__ , __leaf__));
+# 308 "/usr/include/math.h" 2 3 4
+# 349 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 1 3 4
+# 21 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
+extern int __fpclassifyl (long double __value) __attribute__ ((__nothrow__ , __leaf__))
+     __attribute__ ((__const__));
+
+
+extern int __signbitl (long double __value) __attribute__ ((__nothrow__ , __leaf__))
+     __attribute__ ((__const__));
+
+
+
+extern int __isinfl (long double __value) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern int __finitel (long double __value) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern int __isnanl (long double __value) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern int __iseqsigl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern int __issignalingl (long double __value) __attribute__ ((__nothrow__ , __leaf__))
+     __attribute__ ((__const__));
+# 350 "/usr/include/math.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern long double acosl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __acosl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double asinl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __asinl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double atanl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __atanl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double atan2l (long double __y, long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __atan2l (long double __y, long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+ extern long double cosl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __cosl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+ extern long double sinl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __sinl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double tanl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __tanl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+extern long double coshl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __coshl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double sinhl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __sinhl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double tanhl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __tanhl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+# 85 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern long double acoshl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __acoshl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double asinhl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __asinhl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double atanhl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __atanhl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+ extern long double expl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __expl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double frexpl (long double __x, int *__exponent) __attribute__ ((__nothrow__ , __leaf__)); extern long double __frexpl (long double __x, int *__exponent) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double ldexpl (long double __x, int __exponent) __attribute__ ((__nothrow__ , __leaf__)); extern long double __ldexpl (long double __x, int __exponent) __attribute__ ((__nothrow__ , __leaf__));
+
+
+ extern long double logl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __logl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double log10l (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __log10l (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double modfl (long double __x, long double *__iptr) __attribute__ ((__nothrow__ , __leaf__)); extern long double __modfl (long double __x, long double *__iptr) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (2)));
+# 119 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern long double expm1l (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __expm1l (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double log1pl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __log1pl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double logbl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __logbl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+extern long double exp2l (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __exp2l (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double log2l (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __log2l (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+
+ extern long double powl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__)); extern long double __powl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double sqrtl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __sqrtl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern long double hypotl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__)); extern long double __hypotl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+extern long double cbrtl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __cbrtl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+
+extern long double ceill (long double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern long double __ceill (long double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern long double fabsl (long double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern long double __fabsl (long double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern long double floorl (long double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern long double __floorl (long double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern long double fmodl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__)); extern long double __fmodl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__));
+# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern long double copysignl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern long double __copysignl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+
+
+extern long double nanl (const char *__tagb) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern long double __nanl (const char *__tagb) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+# 228 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern long double erfl (long double) __attribute__ ((__nothrow__ , __leaf__)); extern long double __erfl (long double) __attribute__ ((__nothrow__ , __leaf__));
+extern long double erfcl (long double) __attribute__ ((__nothrow__ , __leaf__)); extern long double __erfcl (long double) __attribute__ ((__nothrow__ , __leaf__));
+extern long double lgammal (long double) __attribute__ ((__nothrow__ , __leaf__)); extern long double __lgammal (long double) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+extern long double tgammal (long double) __attribute__ ((__nothrow__ , __leaf__)); extern long double __tgammal (long double) __attribute__ ((__nothrow__ , __leaf__));
+# 256 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern long double rintl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __rintl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double nextafterl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__)); extern long double __nextafterl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__));
+
+extern long double nexttowardl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__)); extern long double __nexttowardl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__));
+# 272 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern long double remainderl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__)); extern long double __remainderl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern long double scalbnl (long double __x, int __n) __attribute__ ((__nothrow__ , __leaf__)); extern long double __scalbnl (long double __x, int __n) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern int ilogbl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern int __ilogbl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+# 290 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern long double scalblnl (long double __x, long int __n) __attribute__ ((__nothrow__ , __leaf__)); extern long double __scalblnl (long double __x, long int __n) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern long double nearbyintl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long double __nearbyintl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern long double roundl (long double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern long double __roundl (long double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+
+extern long double truncl (long double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern long double __truncl (long double __x) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+
+
+extern long double remquol (long double __x, long double __y, int *__quo) __attribute__ ((__nothrow__ , __leaf__)); extern long double __remquol (long double __x, long double __y, int *__quo) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+
+
+
+extern long int lrintl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long int __lrintl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+__extension__
+extern long long int llrintl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long long int __llrintl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern long int lroundl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long int __lroundl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+__extension__
+extern long long int llroundl (long double __x) __attribute__ ((__nothrow__ , __leaf__)); extern long long int __llroundl (long double __x) __attribute__ ((__nothrow__ , __leaf__));
+
+
+
+extern long double fdiml (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__)); extern long double __fdiml (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern long double fmaxl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern long double __fmaxl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern long double fminl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__)); extern long double __fminl (long double __x, long double __y) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern long double fmal (long double __x, long double __y, long double __z) __attribute__ ((__nothrow__ , __leaf__)); extern long double __fmal (long double __x, long double __y, long double __z) __attribute__ ((__nothrow__ , __leaf__));
+# 351 "/usr/include/math.h" 2 3 4
+# 420 "/usr/include/math.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 1 3 4
+# 21 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
+extern int __fpclassifyf128 (_Float128 __value) __attribute__ ((__nothrow__ , __leaf__))
+     __attribute__ ((__const__));
+
+
+extern int __signbitf128 (_Float128 __value) __attribute__ ((__nothrow__ , __leaf__))
+     __attribute__ ((__const__));
+
+
+
+extern int __isinff128 (_Float128 __value) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern int __finitef128 (_Float128 __value) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern int __isnanf128 (_Float128 __value) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__const__));
+
+
+extern int __iseqsigf128 (_Float128 __x, _Float128 __y) __attribute__ ((__nothrow__ , __leaf__));
+
+
+extern int __issignalingf128 (_Float128 __value) __attribute__ ((__nothrow__ , __leaf__))
+     __attribute__ ((__const__));
+# 421 "/usr/include/math.h" 2 3 4
+# 569 "/usr/include/math.h" 3 4
+enum
+  {
+    FP_NAN =
+
+      0,
+    FP_INFINITE =
+
+      1,
+    FP_ZERO =
+
+      2,
+    FP_SUBNORMAL =
+
+      3,
+    FP_NORMAL =
+
+      4
+  };
+# 1263 "/usr/include/math.h" 3 4
+
+# 31 "/usr/include/tgmath.h" 2 3 4
+# 4 "c99-complex.c" 2
+# 1 "testharness.h" 1
+
+
+  
+# 3 "testharness.h"
+ extern int printf(const char * format, ...);
+# 12 "testharness.h"
+extern void exit(int);
+# 5 "c99-complex.c" 2
+
+void forlong() {
+    long double 
+# 7 "c99-complex.c" 3 4
+               _Complex 
+# 7 "c99-complex.c"
+                       z1 = 1.0il + 1;
+    printf("I * I = %.1Lf%+.1Lfi\n", 
+# 8 "c99-complex.c" 3 4
+                                    (__extension__ ((sizeof (+__real__ ((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    ))) != 8) ? ((__builtin_classify_type ((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0)) == 8))))) 0))) 0)) creal ((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0)) == 8))))) 0))) 0)) creal ((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    ))) : (sizeof (+__real__ ((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    ))) : ((__builtin_classify_type ((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0)) == 8))))) 0))) 0)) creall ((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))) 0)) == 8))))) 0))) 0)) creall ((
+# 8 "c99-complex.c"
+                                    z1
+# 8 "c99-complex.c" 3 4
+                                    )))))
+# 8 "c99-complex.c"
+                                             , 
+# 8 "c99-complex.c" 3 4
+                                               (__extension__ ((sizeof (+__real__ ((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               ))) != 8) ? ((__builtin_classify_type ((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               ))) : (sizeof (+__real__ ((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               ))) : ((__builtin_classify_type ((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 8 "c99-complex.c"
+                                               z1
+# 8 "c99-complex.c" 3 4
+                                               )))))
+# 8 "c99-complex.c"
+                                                        );
+
+    long double 
+# 10 "c99-complex.c" 3 4
+               _Complex 
+# 10 "c99-complex.c"
+                       z2 = 
+# 10 "c99-complex.c" 3 4
+                            (__extension__ ((sizeof (__real__ ((__extension__ 1.0iF)) + __real__ (
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            )) > sizeof (double) && __builtin_classify_type (__real__ ((__extension__ 1.0iF)) + __real__ (
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            )) == 8) ? ((__builtin_classify_type (((__extension__ 1.0iF)) + (
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            )) != 9) ? (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF)))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0)) == 1))))) 0)) 0))) 0)) powl ((__extension__ 1.0iF), 
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ) : (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF)))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0)) == 1))))) 0)) 0))) 0)) cpowl ((__extension__ 1.0iF), 
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            )) : (sizeof (+__real__ ((__extension__ 1.0iF))) == sizeof (double) || sizeof (+__real__ (
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            )) == sizeof (double) || __builtin_classify_type (__real__ ((__extension__ 1.0iF))) != 8 || __builtin_classify_type (__real__ (
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            )) != 8) ? ((__builtin_classify_type (((__extension__ 1.0iF)) + (
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            )) != 9) ? (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF)))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0)) == 1))))) 0)) 0))) 0)) pow ((__extension__ 1.0iF), 
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ) : (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF)))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0)) == 1))))) 0)) 0))) 0)) cpow ((__extension__ 1.0iF), 
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            )) : ((__builtin_classify_type (((__extension__ 1.0iF)) + (
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            )) != 9) ? (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF)))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0)) == 1))))) 0)) 0))) 0)) powf ((__extension__ 1.0iF), 
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ) : (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF)))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))) 0)) == 1))))) 0)) 0))) 0)) cpowf ((__extension__ 1.0iF), 
+# 10 "c99-complex.c"
+                            2
+# 10 "c99-complex.c" 3 4
+                            ))))
+# 10 "c99-complex.c"
+                                              ;
+    printf("pow(I, 2) = %.1Lf%+.1Lfi\n", 
+# 11 "c99-complex.c" 3 4
+                                        (__extension__ ((sizeof (+__real__ ((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        ))) != 8) ? ((__builtin_classify_type ((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0)) == 8))))) 0))) 0)) creal ((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0)) == 8))))) 0))) 0)) creal ((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        ))) : (sizeof (+__real__ ((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        ))) : ((__builtin_classify_type ((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0)) == 8))))) 0))) 0)) creall ((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))) 0)) == 8))))) 0))) 0)) creall ((
+# 11 "c99-complex.c"
+                                        z2
+# 11 "c99-complex.c" 3 4
+                                        )))))
+# 11 "c99-complex.c"
+                                                 , 
+# 11 "c99-complex.c" 3 4
+                                                   (__extension__ ((sizeof (+__real__ ((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   ))) != 8) ? ((__builtin_classify_type ((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   ))) : (sizeof (+__real__ ((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   ))) : ((__builtin_classify_type ((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 11 "c99-complex.c"
+                                                   z2
+# 11 "c99-complex.c" 3 4
+                                                   )))))
+# 11 "c99-complex.c"
+                                                            );
+
+    double long PI = 
+# 13 "c99-complex.c" 3 4
+                    (__extension__ ((sizeof (+__real__ (
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    )) == sizeof (double) || __builtin_classify_type (__real__ (
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    )) != 8) ? ((__builtin_classify_type (
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ) != 9) ? (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0)) == 1))))) 0)) 0))) acos (
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ) : (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0)) == 1))))) 0)) 0))) cacos (
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    )) : (sizeof (+__real__ (
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    )) == sizeof (float)) ? ((__builtin_classify_type (
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ) != 9) ? (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0)) == 1))))) 0)) 0))) acosf (
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ) : (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0)) == 1))))) 0)) 0))) cacosf (
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    )) : ((__builtin_classify_type (
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ) != 9) ? (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0)) == 1))))) 0)) 0))) acosl (
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ) : (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))) 0)) == 1))))) 0)) 0))) cacosl (
+# 13 "c99-complex.c"
+                    -1
+# 13 "c99-complex.c" 3 4
+                    ))))
+# 13 "c99-complex.c"
+                            ;
+    double long 
+# 14 "c99-complex.c" 3 4
+               _Complex 
+# 14 "c99-complex.c"
+                       z3 = 
+# 14 "c99-complex.c" 3 4
+                            (__extension__ ((sizeof (+__real__ ((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            )) == sizeof (double) || __builtin_classify_type (__real__ ((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            )) != 8) ? ((__builtin_classify_type ((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ) != 9) ? (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0)) == 1))))) 0)) 0))) exp ((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ) : (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0)) == 1))))) 0)) 0))) cexp ((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            )) : (sizeof (+__real__ ((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            )) == sizeof (float)) ? ((__builtin_classify_type ((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ) != 9) ? (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0)) == 1))))) 0)) 0))) expf ((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ) : (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0)) == 1))))) 0)) 0))) cexpf ((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            )) : ((__builtin_classify_type ((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ) != 9) ? (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0)) == 1))))) 0)) 0))) expl ((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ) : (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))) 0)) == 1))))) 0)) 0))) cexpl ((__extension__ 1.0iF) 
+# 14 "c99-complex.c"
+                            * PI
+# 14 "c99-complex.c" 3 4
+                            ))))
+# 14 "c99-complex.c"
+                                       ;
+    printf("exp(I*PI) = %.1Lf%+.1Lfi\n", 
+# 15 "c99-complex.c" 3 4
+                                        (__extension__ ((sizeof (+__real__ ((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        ))) != 8) ? ((__builtin_classify_type ((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0)) == 8))))) 0))) 0)) creal ((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0)) == 8))))) 0))) 0)) creal ((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        ))) : (sizeof (+__real__ ((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        ))) : ((__builtin_classify_type ((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0)) == 8))))) 0))) 0)) creall ((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))) 0)) == 8))))) 0))) 0)) creall ((
+# 15 "c99-complex.c"
+                                        z3
+# 15 "c99-complex.c" 3 4
+                                        )))))
+# 15 "c99-complex.c"
+                                                 , 
+# 15 "c99-complex.c" 3 4
+                                                   (__extension__ ((sizeof (+__real__ ((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   ))) != 8) ? ((__builtin_classify_type ((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   ))) : (sizeof (+__real__ ((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   ))) : ((__builtin_classify_type ((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 15 "c99-complex.c"
+                                                   z3
+# 15 "c99-complex.c" 3 4
+                                                   )))))
+# 15 "c99-complex.c"
+                                                            );
+
+    double long 
+# 17 "c99-complex.c" 3 4
+               _Complex 
+# 17 "c99-complex.c"
+                       z4 = 1+2*
+# 17 "c99-complex.c" 3 4
+                                (__extension__ 1.0iF)
+# 17 "c99-complex.c"
+                                 , z5 = 1-2*
+# 17 "c99-complex.c" 3 4
+                                            (__extension__ 1.0iF)
+# 17 "c99-complex.c"
+                                             ;
+    printf("(1+2i)*(1-2i) = %.Lf%+.Lfi\n", 
+# 18 "c99-complex.c" 3 4
+                                          (__extension__ ((sizeof (+__real__ ((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          ))) != 8) ? ((__builtin_classify_type ((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0)) == 8))))) 0))) 0)) creal ((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0)) == 8))))) 0))) 0)) creal ((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          ))) : (sizeof (+__real__ ((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          ))) : ((__builtin_classify_type ((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0)) == 8))))) 0))) 0)) creall ((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))) 0)) == 8))))) 0))) 0)) creall ((
+# 18 "c99-complex.c"
+                                          z4*z5
+# 18 "c99-complex.c" 3 4
+                                          )))))
+# 18 "c99-complex.c"
+                                                      , 
+# 18 "c99-complex.c" 3 4
+                                                        (__extension__ ((sizeof (+__real__ ((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        ))) != 8) ? ((__builtin_classify_type ((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        ))) : (sizeof (+__real__ ((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        ))) : ((__builtin_classify_type ((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 18 "c99-complex.c"
+                                                        z4*z5
+# 18 "c99-complex.c" 3 4
+                                                        )))))
+# 18 "c99-complex.c"
+                                                                    );
+}
+
+int main(void)
+{
+    double 
+# 23 "c99-complex.c" 3 4
+          _Complex 
+# 23 "c99-complex.c"
+                  x0 = 1.0i + 17;
+    double 
+# 24 "c99-complex.c" 3 4
+          _Complex 
+# 24 "c99-complex.c"
+                  x1 = 1.0iF + 0.5;
+    double 
+# 25 "c99-complex.c" 3 4
+          _Complex 
+# 25 "c99-complex.c"
+                  x00 = 1.0Fi + 0.5;
+
+    if(sizeof(double 
+# 27 "c99-complex.c" 3 4
+                    _Complex
+# 27 "c99-complex.c"
+                           ) != sizeof(1.0iF + 0.5)) {
+        { printf("Error %d\n", (int)1); exit(1); };
+    }
+
+    double d = 
+# 31 "c99-complex.c" 3 4
+              (__extension__ ((sizeof (+__real__ ((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              ))) != 8) ? ((__builtin_classify_type ((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0)) == 8))))) 0))) 0)) creal ((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0)) == 8))))) 0))) 0)) creal ((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              ))) : (sizeof (+__real__ ((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              ))) : ((__builtin_classify_type ((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0)) == 8))))) 0))) 0)) creall ((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))) 0)) == 8))))) 0))) 0)) creall ((
+# 31 "c99-complex.c"
+              x1
+# 31 "c99-complex.c" 3 4
+              )))))
+# 31 "c99-complex.c"
+                       ;
+    double i = 
+# 32 "c99-complex.c" 3 4
+              (__extension__ ((sizeof (+__real__ ((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              ))) != 8) ? ((__builtin_classify_type ((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              ))) : (sizeof (+__real__ ((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              ))) : ((__builtin_classify_type ((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 32 "c99-complex.c"
+              x1
+# 32 "c99-complex.c" 3 4
+              )))))
+# 32 "c99-complex.c"
+                       ;
+
+    double j = __imag__(1.0if);
+
+    if(d != 0.5)
+        { printf("Error %d\n", (int)2); exit(2); };
+
+    if(i != 1.0 || j != 1.0)
+        { printf("Error %d\n", (int)3); exit(3); };
+
+    double 
+# 42 "c99-complex.c" 3 4
+          _Complex 
+# 42 "c99-complex.c"
+                  z1 = 1.0iF + 1;
+    printf("I * I = %.1f%+.1fi\n", 
+# 43 "c99-complex.c" 3 4
+                                  (__extension__ ((sizeof (+__real__ ((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  ))) != 8) ? ((__builtin_classify_type ((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0)) == 8))))) 0))) 0)) creal ((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0)) == 8))))) 0))) 0)) creal ((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  ))) : (sizeof (+__real__ ((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  ))) : ((__builtin_classify_type ((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0)) == 8))))) 0))) 0)) creall ((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))) 0)) == 8))))) 0))) 0)) creall ((
+# 43 "c99-complex.c"
+                                  z1
+# 43 "c99-complex.c" 3 4
+                                  )))))
+# 43 "c99-complex.c"
+                                           , 
+# 43 "c99-complex.c" 3 4
+                                             (__extension__ ((sizeof (+__real__ ((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             ))) != 8) ? ((__builtin_classify_type ((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             ))) : (sizeof (+__real__ ((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             ))) : ((__builtin_classify_type ((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 43 "c99-complex.c"
+                                             z1
+# 43 "c99-complex.c" 3 4
+                                             )))))
+# 43 "c99-complex.c"
+                                                      );
+
+    double 
+# 45 "c99-complex.c" 3 4
+          _Complex 
+# 45 "c99-complex.c"
+                  z2 = 
+# 45 "c99-complex.c" 3 4
+                       (__extension__ ((sizeof (__real__ ((__extension__ 1.0iF)) + __real__ (
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       )) > sizeof (double) && __builtin_classify_type (__real__ ((__extension__ 1.0iF)) + __real__ (
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       )) == 8) ? ((__builtin_classify_type (((__extension__ 1.0iF)) + (
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       )) != 9) ? (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF)))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0)) == 1))))) 0)) 0))) 0)) powl ((__extension__ 1.0iF), 
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ) : (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF)))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0)) == 1))))) 0)) 0))) 0)) cpowl ((__extension__ 1.0iF), 
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       )) : (sizeof (+__real__ ((__extension__ 1.0iF))) == sizeof (double) || sizeof (+__real__ (
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       )) == sizeof (double) || __builtin_classify_type (__real__ ((__extension__ 1.0iF))) != 8 || __builtin_classify_type (__real__ (
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       )) != 8) ? ((__builtin_classify_type (((__extension__ 1.0iF)) + (
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       )) != 9) ? (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF)))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0)) == 1))))) 0)) 0))) 0)) pow ((__extension__ 1.0iF), 
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ) : (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF)))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0)) == 1))))) 0)) 0))) 0)) cpow ((__extension__ 1.0iF), 
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       )) : ((__builtin_classify_type (((__extension__ 1.0iF)) + (
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       )) != 9) ? (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF)))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0)) == 1))))) 0)) 0))) 0)) powf ((__extension__ 1.0iF), 
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ) : (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF)))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF)))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF)))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))) 0)) == 1))))) 0)) 0))) 0)) cpowf ((__extension__ 1.0iF), 
+# 45 "c99-complex.c"
+                       2
+# 45 "c99-complex.c" 3 4
+                       ))))
+# 45 "c99-complex.c"
+                                         ;
+    printf("pow(I, 2) = %.1f%+.1fi\n", 
+# 46 "c99-complex.c" 3 4
+                                      (__extension__ ((sizeof (+__real__ ((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      ))) != 8) ? ((__builtin_classify_type ((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0)) == 8))))) 0))) 0)) creal ((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0)) == 8))))) 0))) 0)) creal ((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      ))) : (sizeof (+__real__ ((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      ))) : ((__builtin_classify_type ((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0)) == 8))))) 0))) 0)) creall ((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))) 0)) == 8))))) 0))) 0)) creall ((
+# 46 "c99-complex.c"
+                                      z2
+# 46 "c99-complex.c" 3 4
+                                      )))))
+# 46 "c99-complex.c"
+                                               , 
+# 46 "c99-complex.c" 3 4
+                                                 (__extension__ ((sizeof (+__real__ ((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 ))) != 8) ? ((__builtin_classify_type ((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 ))) : (sizeof (+__real__ ((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 ))) : ((__builtin_classify_type ((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 46 "c99-complex.c"
+                                                 z2
+# 46 "c99-complex.c" 3 4
+                                                 )))))
+# 46 "c99-complex.c"
+                                                          );
+
+    double PI = 
+# 48 "c99-complex.c" 3 4
+               (__extension__ ((sizeof (+__real__ (
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               )) == sizeof (double) || __builtin_classify_type (__real__ (
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               )) != 8) ? ((__builtin_classify_type (
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ) != 9) ? (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0)) == 1))))) 0)) 0))) acos (
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ) : (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0)) == 1))))) 0)) 0))) cacos (
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               )) : (sizeof (+__real__ (
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               )) == sizeof (float)) ? ((__builtin_classify_type (
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ) != 9) ? (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0)) == 1))))) 0)) 0))) acosf (
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ) : (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0)) == 1))))) 0)) 0))) cacosf (
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               )) : ((__builtin_classify_type (
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ) != 9) ? (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0)) == 1))))) 0)) 0))) acosl (
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ) : (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))) 0)) == 1))))) 0)) 0))) cacosl (
+# 48 "c99-complex.c"
+               -1
+# 48 "c99-complex.c" 3 4
+               ))))
+# 48 "c99-complex.c"
+                       ;
+    double 
+# 49 "c99-complex.c" 3 4
+          _Complex 
+# 49 "c99-complex.c"
+                  z3 = 
+# 49 "c99-complex.c" 3 4
+                       (__extension__ ((sizeof (+__real__ ((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       )) == sizeof (double) || __builtin_classify_type (__real__ ((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       )) != 8) ? ((__builtin_classify_type ((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ) != 9) ? (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0)) == 1))))) 0)) 0))) exp ((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ) : (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0)) == 1))))) 0)) 0))) cexp ((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       )) : (sizeof (+__real__ ((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       )) == sizeof (float)) ? ((__builtin_classify_type ((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ) != 9) ? (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0)) == 1))))) 0)) 0))) expf ((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ) : (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0)) == 1))))) 0)) 0))) cexpf ((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       )) : ((__builtin_classify_type ((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ) != 9) ? (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0)) == 1))))) 0)) 0))) expl ((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ) : (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))) 0)) == 1))))) 0)) 0))) cexpl ((__extension__ 1.0iF) 
+# 49 "c99-complex.c"
+                       * PI
+# 49 "c99-complex.c" 3 4
+                       ))))
+# 49 "c99-complex.c"
+                                  ;
+    printf("exp(I*PI) = %.1f%+.1fi\n", 
+# 50 "c99-complex.c" 3 4
+                                      (__extension__ ((sizeof (+__real__ ((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      ))) != 8) ? ((__builtin_classify_type ((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0)) == 8))))) 0))) 0)) creal ((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0)) == 8))))) 0))) 0)) creal ((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      ))) : (sizeof (+__real__ ((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      ))) : ((__builtin_classify_type ((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0)) == 8))))) 0))) 0)) creall ((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))) 0)) == 8))))) 0))) 0)) creall ((
+# 50 "c99-complex.c"
+                                      z3
+# 50 "c99-complex.c" 3 4
+                                      )))))
+# 50 "c99-complex.c"
+                                               , 
+# 50 "c99-complex.c" 3 4
+                                                 (__extension__ ((sizeof (+__real__ ((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 ))) != 8) ? ((__builtin_classify_type ((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 ))) : (sizeof (+__real__ ((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 ))) : ((__builtin_classify_type ((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 50 "c99-complex.c"
+                                                 z3
+# 50 "c99-complex.c" 3 4
+                                                 )))))
+# 50 "c99-complex.c"
+                                                          );
+
+    double 
+# 52 "c99-complex.c" 3 4
+          _Complex 
+# 52 "c99-complex.c"
+                  z4 = 1+2*
+# 52 "c99-complex.c" 3 4
+                           (__extension__ 1.0iF)
+# 52 "c99-complex.c"
+                            , z5 = 1-2*
+# 52 "c99-complex.c" 3 4
+                                       (__extension__ 1.0iF)
+# 52 "c99-complex.c"
+                                        ;
+    printf("(1+2i)*(1-2i) = %.1f%+.1fi\n", 
+# 53 "c99-complex.c" 3 4
+                                          (__extension__ ((sizeof (+__real__ ((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          ))) != 8) ? ((__builtin_classify_type ((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0)) == 8))))) 0))) 0)) creal ((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0)) == 8))))) 0))) 0)) creal ((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          ))) : (sizeof (+__real__ ((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0)) == 8))))) 0))) 0)) crealf ((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          ))) : ((__builtin_classify_type ((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0)) == 8))))) 0))) 0)) creall ((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))) 0)) == 8))))) 0))) 0)) creall ((
+# 53 "c99-complex.c"
+                                          z4*z5
+# 53 "c99-complex.c" 3 4
+                                          )))))
+# 53 "c99-complex.c"
+                                                      , 
+# 53 "c99-complex.c" 3 4
+                                                        (__extension__ ((sizeof (+__real__ ((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        ))) == sizeof (double) || __builtin_classify_type (__real__ ((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        ))) != 8) ? ((__builtin_classify_type ((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8))))) 0))) 0)) cimag ((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        ))) : (sizeof (+__real__ ((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        ))) == sizeof (float)) ? ((__builtin_classify_type ((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8))))) 0))) 0)) cimagf ((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        ))) : ((__builtin_classify_type ((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )) != 9) ? (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )) : (__typeof__ (__real__ (__typeof__ (*(0 ? (__typeof__ (0 ? (double *) 0 : (void *) ((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8)))) 0 : (__typeof__ (0 ? (__typeof__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))) 0)) == 8))))) 0))) 0)) cimagl ((
+# 53 "c99-complex.c"
+                                                        z4*z5
+# 53 "c99-complex.c" 3 4
+                                                        )))))
+# 53 "c99-complex.c"
+                                                                    );
+
+    forlong();
+    return 0;
+}
+
+void parsedebug() {
+    __real__ (1.0iF);
+    __real__ (2);
+    0 + __real__(2);
+    __real__(2) + 0;
+    (sizeof (__real__ (1.0iF) + __real__ (2)) > sizeof (double) && __builtin_classify_type (__real__ (1.0iF) + __real__ (2)) == 8);
+
+
+   (__extension__ ((sizeof (__real__ (1.0iF) + __real__ (2)) > sizeof (double) && __builtin_classify_type (__real__ (
+
+   1.0iF
+
+   ) + __real__ (
+
+   2
+
+   )) == 8) ? ((__builtin_classify_type ((
+
+   1.0iF
+   ) + (
+
+   2
+
+   )) != 9) ? (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+
+   1.0iF
+
+   ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+   1.0iF
+   ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   1.0iF
+   ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   1.0iF
+   ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+   1.0iF
+   ))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+   2
+   ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+   2
+   ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   2
+   ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   2
+   ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+   2
+   ))) 0)) == 1))))) 0)) 0))) 0)) powl (
+   1.0iF
+   ,
+   2
+   ) : (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+   1.0iF
+   ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+   1.0iF
+   ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   1.0iF
+   ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   1.0iF
+   ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+   1.0iF
+   ))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+   2
+   ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+   2
+   ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   2
+   ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   2
+   ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+   2
+   ))) 0)) == 1))))) 0)) 0))) 0)) cpowl (
+   1.0iF
+   ,
+   2
+   )) : (sizeof (+__real__ (
+   1.0iF
+   )) == sizeof (double) || sizeof (+__real__ (
+   2
+   )) == sizeof (double) || __builtin_classify_type (__real__ (
+   1.0iF
+   )) != 8 || __builtin_classify_type (__real__ (
+   2
+   )) != 8) ? ((__builtin_classify_type ((
+   1.0iF
+   ) + (
+   2
+   )) != 9) ? (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+   1.0iF
+   ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+   1.0iF
+   ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   1.0iF
+   ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   1.0iF
+   ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+   1.0iF
+   ))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+   2
+   ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+   2
+   ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   2
+   ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   2
+   ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+   2
+   ))) 0)) == 1))))) 0)) 0))) 0)) 
+# 164 "c99-complex.c" 3 4
+                                 (__extension__ ((sizeof (__real__ (
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ) + __real__ (
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 )) > sizeof (double) && __builtin_classify_type (__real__ (
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ) + __real__ (
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 )) == 8) ? ((__builtin_classify_type ((
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ) + (
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 )) != 9) ? (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 1))))) 0)) 0))) 0)) powl (
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 , 
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ) : (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 1))))) 0)) 0))) 0)) cpowl (
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 , 
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 )) : (sizeof (+__real__ (
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 )) == sizeof (double) || sizeof (+__real__ (
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 )) == sizeof (double) || __builtin_classify_type (__real__ (
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 )) != 8 || __builtin_classify_type (__real__ (
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 )) != 8) ? ((__builtin_classify_type ((
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ) + (
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 )) != 9) ? (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 1))))) 0)) 0))) 0)) pow (
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 , 
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ) : (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 1))))) 0)) 0))) 0)) cpow (
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 , 
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 )) : ((__builtin_classify_type ((
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ) + (
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 )) != 9) ? (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 1))))) 0)) 0))) 0)) powf (
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 , 
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ) : (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))) 0)) == 1))))) 0)) 0))) 0)) cpowf (
+# 164 "c99-complex.c"
+                                 1.0iF
+# 164 "c99-complex.c" 3 4
+                                 , 
+# 164 "c99-complex.c"
+                                 2
+# 164 "c99-complex.c" 3 4
+                                 ))))
+
+
+
+     
+# 168 "c99-complex.c"
+    : (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+   1.0iF
+   ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+   1.0iF
+   ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   1.0iF
+   ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   1.0iF
+   ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+   1.0iF
+   ))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+   2
+   ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+   2
+   ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   2
+   ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   2
+   ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+   2
+   ))) 0)) == 1))))) 0)) 0))) 0)) cpow (
+   1.0iF
+   ,
+   2
+   )) : ((__builtin_classify_type ((
+   1.0iF
+   ) + (
+   2
+   )) != 9) ? (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+   1.0iF
+   ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+   1.0iF
+   ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   1.0iF
+   ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   1.0iF
+   ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+   1.0iF
+   ))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+   2
+   ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+   2
+   ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   2
+   ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   2
+   ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+   2
+   ))) 0)) == 1))))) 0)) 0))) 0)) powf (
+   1.0iF
+   ,
+   2
+   ) : (__typeof ((__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+   1.0iF
+   ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+   1.0iF
+   ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   1.0iF
+   ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   1.0iF
+   ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+   1.0iF
+   ))) 0)) == 1))))) 0)) 0))) 0 + (__typeof__ (*(0 ? (__typeof__ (0 ? (__typeof__ ((__typeof__ (+(
+   2
+   ))) 0) *) 0 : (void *) (!((__builtin_classify_type (__real__ ((__typeof__ (+(
+   2
+   ))) 0)) == 8))))) 0 : (__typeof__ (0 ? (__typeof__ (0 ? (double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   2
+   ))) 0) == 1))))) 0 : (__typeof__ (0 ? (_Complex double *) 0 : (void *) (!((__builtin_classify_type ((__typeof__ (+(
+   2
+   ))) 0) == 9 && __builtin_classify_type (__real__ ((__typeof__ (+(
+   2
+   ))) 0)) == 1))))) 0)) 0))) 0)) cpowf (
+   1.0iF
+   ,
+   2
+   ))))
+                ;
+}
