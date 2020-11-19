@@ -5,7 +5,12 @@ AC_DEFUN([__CIL_CHECK_INTEGER_TYPE_TYPE], [
     AC_COMPILE_IFELSE([AC_LANG_SOURCE([
 #include <stddef.h>
 #include <wchar.h>
+#ifdef HAVE_UCHAR_H
 #include <uchar.h>
+#else
+typedef unsigned short char16_t;
+typedef unsigned int char32_t;
+#endif
 /* We define a prototype with one type and the function with
    another type.  This will result in compilation error
    unless the types are really identical. */
